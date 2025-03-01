@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santan'next - Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="logo.svg" alt="Santan'next Logo" class="logo">
+            </div>
+            <div class="nav-links">
+                <a href="events.html">Events</a>
+                <a href="movilidad.html">Movilidad</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="events" class="section">
+            <div class="section-header">
+                <h2>Últimos Eventos</h2>
+                <button class="map-btn" id="showMapBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Ver Mapa
+                </button>
+            </div>
+            <div id="mapModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="map"></div>
+                </div>
+            </div>
+            <div class="news-container">
+                <article class="news-card" data-location="43.4623, -3.8099">
+                    <div class="card-header">
+                        <h3>Hack2Progress</h3>
+                        <div class="tags-container">
+                            <span class="tag">Nuevo</span>
+                            <span class="priority-tag priority-high">Alto</span>
+                        </div>
+                    </div>
+                    <p>Un evento para la movilidad sostenible</p>
+                    <span class="date">1 Marzo 2025</span>
+                </article>
+                <article class="news-card" data-location="43.4647, -3.8044">
+                    <div class="card-header">
+                        <h3>Gala carnaval</h3>
+                        <div class="tags-container">
+                            <span class="tag">Destacado</span>
+                            <span class="priority-tag priority-medium">Medio</span>
+                        </div>
+                    </div>
+                    <p>El Carnaval de Santander 2025 arranca este viernes con una gran gala que se desarrollará en el Palacio de Deportes y que será el pistoletazo de salida a una fiesta que se celebrará hasta el domingo.                    </p>
+                    <span class="date">1 Marzo 2025</span>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 Santan'next - Movilidad inteligente para el futuro</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
