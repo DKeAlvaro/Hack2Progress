@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .text { font-family: Arial, sans-serif; font-weight: bold; fill: #ffffff; }
+        .accent { fill: #4CAF50; }
+    </style>
+    <text x="10" y="35" class="text" font-size="30">Santan'</text>
+    <text x="110" y="35" class="text accent" font-size="30">next</text>
+    <circle cx="180" cy="25" r="8" class="accent" />
+</svg> 
