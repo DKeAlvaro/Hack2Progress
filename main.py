@@ -20,10 +20,10 @@ UI_COLORS = {
 }
 
 # Read GeoJSON data
-data = gpd.read_file("espiras.geojson")
+data = gpd.read_file("data/espiras.geojson")
 
 # Read bus lines CSV
-bus_lines = pd.read_csv("lineas_bus_secuencia.csv")
+bus_lines = pd.read_csv("data/lineas_bus_secuencia.csv")
 
 # Get active espiras from API
 try:
