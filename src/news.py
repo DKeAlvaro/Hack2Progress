@@ -1,6 +1,8 @@
+import sys
 from newsapi import NewsApiClient
 from dotenv import load_dotenv
 import os
+from openai import OpenAI
 
 load_dotenv()
 
@@ -64,6 +66,23 @@ def display_news(articles):
         print(f"\nDescripción: {article['description']}")
         print(f"Leer más: {article['url']}")
 
+
+def summarize_news(articles):
+    client = OpenAI(api_key=os.getenv('DEEPSEEK_API_KEY'), base_url="https://api.deepseek.com")
+
+    response = client.chat.completions.create(
+        model="deepseek-chat",
+        messages=[
+            {"role": "system", "content": "Eres un experto en resumir noticias."},
+            {"role": "user", "content": "Dadas las siguientes noticias, devuelve el impacto que tendrán en la población sobre si generará movilidad en la ciudad (e.g un concierto generará alta movilidad, una convencion de yoga baja movilidad, etc.) alto, bajo o medio. Si es alto, también devuelve el motivo:  " + str(articles)},
+        ],
+        stream=False
+    )
+
+    return response.choices[0].message.content
+
+
+
 def main():
     news_service = NewsService()
     
@@ -71,7 +90,14 @@ def main():
     
     articles = news_service.get_news_by_topic(topic)
     
-    display_news(articles)
+    with open('news_output.txt', 'w') as file:
+        original_stdout = sys.stdout
+        sys.stdout = file
+        try:
+            display_news(articles)
+            print(summarize_news(articles))
+        finally:
+            sys.stdout = original_stdout
 
 if __name__ == "__main__":
     main()
