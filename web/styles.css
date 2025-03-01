@@ -97,9 +97,10 @@ h2::after {
 }
 
 .news-container, .discount-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
+    justify-content: center;
 }
 
 .news-card, .discount-card {
@@ -109,6 +110,9 @@ h2::after {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     border: 1px solid rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
 }
 
 .news-card:hover, .discount-card:hover {
@@ -313,16 +317,20 @@ footer {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
+        padding: 0.5rem;
     }
     
     .nav-links {
         display: flex;
         justify-content: center;
         gap: 1rem;
+        width: 100%;
     }
     
     .nav-links a {
         margin: 0;
+        width: 45%;
+        text-align: center;
     }
     
     .logo {
@@ -331,16 +339,30 @@ footer {
     
     h2 {
         font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
     }
     
     .card-header {
         flex-direction: column;
         gap: 0.5rem;
+        align-items: center;
+        text-align: center;
     }
     
     .tag, .discount-tag {
-        align-self: flex-start;
+        align-self: center;
         margin-left: 0;
+    }
+    
+    .news-card, .discount-card {
+        min-width: 250px;
+        margin: 0 1rem;
+        width: 100%;
+    }
+    
+    .news-card p, .discount-card p {
+        text-align: center;
     }
     
     .action-buttons {
@@ -355,26 +377,54 @@ footer {
 
     .section-header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 1rem;
+        text-align: center;
     }
 
     .map-btn {
         width: 100%;
         justify-content: center;
     }
+
+    main {
+        padding: 0 0.5rem;
+    }
 }
 
 @media (max-width: 480px) {
     .news-container, .discount-container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .news-card, .discount-card {
+        min-width: unset;
+        width: 100%;
+        margin: 0;
     }
     
     main {
         margin: 1rem auto;
+        padding: 0 1rem;
     }
     
     .section {
         margin-bottom: 2rem;
     }
+
+    .nav-links a {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    h2::after {
+        width: 100%;
+    }
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 } 

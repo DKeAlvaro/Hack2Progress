@@ -53,7 +53,25 @@ if (mapBtn) {
                     const title = card.querySelector('h3').textContent;
                     const priority = card.querySelector('.priority-tag').textContent;
                     
-                    L.marker([lat, lng])
+                    // Define marker color based on priority
+                    let markerColor;
+                    if (priority === 'Alto') {
+                        markerColor = 'red';
+                    } else if (priority === 'Medio') {
+                        markerColor = 'yellow';
+                    } else {
+                        markerColor = 'green';
+                    }
+
+                    // Create custom icon with the priority color
+                    const markerIcon = L.divIcon({
+                        className: 'custom-marker',
+                        html: `<div style="background-color: ${markerColor}; width: 24px; height: 24px; border-radius: 50%; border: 2px solid white; box-shadow: 0 0 4px rgba(0,0,0,0.4);"></div>`,
+                        iconSize: [24, 24],
+                        iconAnchor: [12, 12]
+                    });
+                    
+                    L.marker([lat, lng], { icon: markerIcon })
                         .addTo(map)
                         .bindPopup(`<strong>${title}</strong><br>Prioridad: ${priority}`);
                 }
