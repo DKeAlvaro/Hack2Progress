@@ -27,9 +27,9 @@ Una vez identificados y procesados los eventos relevantes, se proporcionarán a 
 </div>
 
 ## Flujo de agente
-<div style="text-align: center;">
+<p align="center">
     <img src="images/diagrama_agente.png" alt="UI" width="300" />
-</div>
+</p>
 
 ## Estructura del repositorio
 
