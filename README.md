@@ -17,7 +17,7 @@ Una vez identificados y procesados los eventos relevantes, se proporcionarán a 
 </p>
 
 <p align="center">
-    <img src="images/santannext-UI.png" alt="UI" width="500" />
+    <img src="images/santannext-UI.png" alt="UI" width="600" />
 </p>
 
 ## Flujo de la solución
