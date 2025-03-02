@@ -12,19 +12,19 @@ Una vez identificados y procesados los eventos relevantes, se proporcionarán a 
 - __Usuarios:__
 
   - Dispondrán de una interfaz que mostrará los eventos relevantes y los descuentos generados por las empresas: 
-<div style="text-align: center;">
+<p align="center">
     <img src="images/santannext.png" alt="Santan'next" width="150" />
-</div>
+</p>
 
-<div style="text-align: center;">
+<p align="center">
     <img src="images/santannext-UI.png" alt="UI" width="300" />
-</div>
+</p>
 
 ## Flujo de la solución
 
-<div style="text-align: center;">
+<p align="center">
     <img src="images/diagrama_de_flujo.png" alt="UI" width="500" />
-</div>
+</p>
 
 ## Flujo de agente
 <p align="center">
