@@ -1,9 +1,11 @@
 ![Hack2Progress Banner](images/hack2progress.png)
 ---
 
-Nuestra solución para la VII Edición del Hack2Progress cuyo lema es "Transforma tu ciudad: Desafío por la movilidad sostenible."
+Nuestra solución para la VII Edición del __Hack2Progress__ cuyo lema es "Transforma tu ciudad: Desafío por la movilidad sostenible."
 
-| Proponemos __Santan'next__. Santan'next se basa en emplear __agentes de IA__ que identificarán __eventos relevantes__ en la ciudad de Santander que puedan generar un __aumento de tráfico__ en la ciudad.
+| Proponemos __Santan'next__. Santan'next se basa en emplear __agentes de IA__ que recorrerán la web para identificar __eventos relevantes__ en la ciudad que puedan generar un __aumento inusual de movimiento de personas__.
+
+Estos eventos son difíciles de detectar con técnicas tradicionales ya que a menudo son eventos deportivos, conciertos, etc los cuáles se comunican mediante infinidad de fuentes de información y con distintos formatos.
 
 Una vez identificados y procesados los eventos relevantes, se proporcionarán a diferentes stakeholders:
 - __Empresas:__
