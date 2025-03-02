@@ -1,4 +1,4 @@
-![Hack2Progress Banner](banner.png)
+![santannext](santannext.png) ![hack2progress](hack2progress.png){: style="width:50%;"}
 
 ---
 
