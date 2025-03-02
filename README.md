@@ -1,8 +1,8 @@
-# Santan'next - Hack2Progress VII
-
 <div style="display: flex; align-items: center; gap: 20px;">
-    <img src="santannext.png" alt="Santan'next Logo" />
-    <img src="hack2progress.png" alt="Hack2Progress Logo" width="50%" />
+    <div style="padding-right: 20px; border-right: 2px solid #ccc;">
+        <img src="santannext.png" alt="Santan'next Logo" />
+    </div>
+    <img src="hack2progress.png" alt="Hack2Progress Logo" width="30%" />
 </div>
 
 ---
