@@ -1,6 +1,5 @@
-<div style="display: flex; flex-direction: row; align-items: center; gap: 20px;">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
     <img src="santannext.png" alt="Santan'next Logo" />
-    <div style="width: 2px; height: 100px; background-color: black;"></div>
     <img src="hack2progress.png" alt="Hack2Progress Logo" width="40%" />
 </div>
 
