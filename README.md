@@ -1,4 +1,9 @@
-![santannext](santannext.png) ![hack2progress](hack2progress.png){: style="width:50%;"}
+# Santan'next - Hack2Progress VII
+
+<div style="display: flex; align-items: center; gap: 20px;">
+    <img src="public/santannext-logo.png" alt="Santan'next Logo" />
+    <img src="public/hack2progress-logo.png" alt="Hack2Progress Logo" width="50%" />
+</div>
 
 ---
 
