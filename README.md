@@ -10,5 +10,8 @@ Una vez identificados y procesados los eventos relevantes, se proporcionarán a 
     - De modo que puedan tomar decisiones sobre __cómo abordar el aumento de tráfico__ (Por ejemplo, añadir descuentos en carsharing o bicicletas eléctricas, o aumento de frecuencia de transporte público)
  
 - Usuarios:
-  - Dispondrán de una interfaz (![Santan'next](santannext.png)) que mostrará los eventos relevantes y los descuentos generados por las empresas.
+
+  - Dispondrán de una interfaz que mostrará los eventos relevantes y los descuentos generados por las empresas.  
+    ![Santan'next](santannext.png)
+    ![UI](santannext-UI.png){: style="width:50%;"}
 
